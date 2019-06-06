@@ -1,6 +1,6 @@
-spring:
-  profiles:
-    active:
+spring: 
+  profiles: 
+    active: 
       - dev
 ---
 server: 
@@ -12,8 +12,8 @@ spring:
     name: microservicecloud-config-eureka-client
 
 eureka: 
-  instance:
-    hostname: eureka9001.com #eureka服务端的实例名称,由于不能都一样，所以，要修改下 host 进行下映射
+  instance: 
+    hostname: localhost
   client: 
     register-with-eureka: false     #false表示不向注册中心注册自己。
     fetch-registry: false     #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去获取注册信息
@@ -29,8 +29,8 @@ spring:
     name: microservicecloud-config-eureka-client
 
 eureka: 
-  instance:
-    hostname: eureka9001.com
+  instance: 
+    hostname: localhost
   client: 
     register-with-eureka: false     
     fetch-registry: false    
